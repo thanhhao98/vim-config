@@ -5,7 +5,6 @@ call vundle#begin('/home/haophan/.config/nvim/data')
     Plugin 'morhetz/gruvbox'
     Plugin 'tpope/vim-surround'
     Plugin 'jiangmiao/auto-pairs'
-    Plugin 'APZelos/blamer.nvim'
     Plugin 'junegunn/fzf.vim'
     Plugin 'rking/ag.vim'
     Plugin 'wakatime/vim-wakatime'
@@ -76,7 +75,6 @@ nnoremap <Leader>w :call fzf#vim#windows()<CR>
 
 
 """ Auto command
-command! Gitlen BlamerToggle
 command! ToggleHF CocCommand clangd.switchSourceHeader
 command! -bang -nargs=? -complete=dir F call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
