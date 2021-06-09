@@ -1,0 +1,23 @@
+{
+    "python.pythonPath": "/home/haophan/.config/miniconda3/bin/python3",
+    "clangd.path": "/home/haophan/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd",
+    "explorer.keyMappings.global": {
+	"<cr>": ["expandable?", "expand", "open"],
+	"v": "open:vsplit"
+    },
+    "languageserver": {
+	"cmake": {
+	    "command": "cmake-language-server",
+	    "filetypes": ["cmake"],
+	    "initializationOptions": {
+		"buildDirectory": "build"
+	    }
+	},
+	"dockerfile": {
+	    "command": "docker-langserver",
+	    "filetypes": ["dockerfile"],
+	    "args": ["--stdio"]
+	}
+    }
+}
+
