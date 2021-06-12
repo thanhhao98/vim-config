@@ -17,6 +17,9 @@ call vundle#begin('/home/haophan/.config/nvim/data')
     Plugin 'tpope/vim-fugitive'
     Plugin 'tpope/vim-rhubarb'
     Plugin 'junegunn/gv.vim'
+    Plugin 'cdelledonne/vim-cmake'
+    Plugin 'voldikss/vim-floaterm'
+    Plugin 'liuchengxu/vim-which-key'
     Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 call vundle#end()
@@ -46,7 +49,6 @@ autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 
 
 """ Map init key
-let mapleader = " "
 let python_highlight_all = 1
 let g:fzf_command_prefix = 'Fzf'
 let g:python3_host_prog = "/home/haophan/.config/miniconda3/bin/python3"
@@ -69,17 +71,20 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-L> <C-W><C-L>
-nnoremap <Leader>m :call fzf#vim#marks()<CR>
-nnoremap <Leader>b :call fzf#vim#buffers()<CR>
-nnoremap <Leader>w :call fzf#vim#windows()<CR>
 
 
 """ Auto command
 command! ToggleHF CocCommand clangd.switchSourceHeader
 command! -bang -nargs=? -complete=dir F call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
+""" set mapleader
+let g:mapleader = "\<Space>"
+
 """ Show keystroke
 set showcmd
+
+""" Which key
+source /home/haophan/.config/nvim/plug-config/which-key.vim
 
 " COC
 source /home/haophan/.config/nvim/plug-config/coc.vim
@@ -96,3 +101,8 @@ source /home/haophan/.config/nvim/plug-config/airline.vim
 """ Signify git intergration
 source /home/haophan/.config/nvim/plug-config/signify-git.vim
 
+""" Cmake git
+source /home/haophan/.config/nvim/plug-config/cmake.vim
+
+""" Floaterm
+source /home/haophan/.config/nvim/plug-config/floaterm.vim
