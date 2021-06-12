@@ -5,17 +5,20 @@ vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
 let g:which_key_map =  {}
 " Define a separator
 let g:which_key_sep = '→'
- set timeoutlen=100
+set timeoutlen=500
 
+" Create map to add keys to
+let g:which_key_map =  {}
 
 " Not a fan of floating windows for this
 let g:which_key_use_floating_win = 0
 
+
 " Change the colors if you want
-highlight default link WhichKey          Operator
-highlight default link WhichKeySeperator DiffAdded
-highlight default link WhichKeyGroup     Identifier
-highlight default link WhichKeyDesc      Function
+"highlight default link WhichKey          Operator
+"highlight default link WhichKeySeperator DiffAdded
+"highlight default link WhichKeyGroup     Identifier
+"highlight default link WhichKeyDesc      Function
 
 " Hide status line
 autocmd! FileType which_key
@@ -30,9 +33,8 @@ let g:which_key_map['m'] = [ ':call fzf#vim#marks()', 'list marks']
 let g:which_key_map['b'] = [ ':call fzf#vim#buffers()', 'list buffers']
 let g:which_key_map['w'] = [ ':call fzf#vim#windows()', 'list windows']
 let g:which_key_map['S'] = [ ':Startify', 'start screen' ]
-let g:which_key_map.c = {
-      \ 'name': '+map',
-      \ 't' : [':CocCommand clangd.switchSourceHeader', 'toggle source header'],
-      \ }
+let g:which_key_map.s = {
+	\'name' : '+comment'
+	\}
 
 call which_key#register('<Space>', "g:which_key_map")

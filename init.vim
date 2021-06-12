@@ -1,4 +1,4 @@
-set rtp+=/home/haophan/.config/nvim/Vundle.vim   
+set rtp+=/home/haophan/.config/nvim/Vundle.vim
 call vundle#begin('/home/haophan/.config/nvim/data')
     Plugin 'preservim/nerdcommenter'
     Plugin 'VundleVim/Vundle.vim'

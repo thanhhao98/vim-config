@@ -18,5 +18,8 @@ let g:which_key_map.t = {
       \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
       \ 'n' : [':FloatermNew node'                              , 'node'],
       \ 'p' : [':FloatermNew python'                            , 'python'],
+      \ 'b' : [':FloatermNew btm'                           	, 'btm'],
+      \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
+      \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
       \ 't' : [':FloatermToggle'                                , 'toggle'],
       \ }

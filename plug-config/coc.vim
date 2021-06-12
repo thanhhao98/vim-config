@@ -56,8 +56,6 @@ endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
     " Symbol renaming.
-nmap <leader>rn <Plug>(coc-rename)
-
 highlight User1 ctermfg=9
 set ruler
 set rulerformat=%80(%1*%.3n\ %f\%=%l,%(%c%V%)\ %P%)%*
