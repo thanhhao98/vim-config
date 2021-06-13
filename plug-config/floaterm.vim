@@ -13,10 +13,11 @@ let g:floaterm_autoclose=1
 
 let g:which_key_map.t = {
       \ 'name' : '+terminal' ,
+      \ 'n' : [':FloatermNew'                               , 'fzf'],
       \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
       \ 'g' : [':FloatermNew lazygit'                           , 'git'],
       \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
-      \ 'n' : [':FloatermNew node'                              , 'node'],
+      \ 'N' : [':FloatermNew node'                              , 'node'],
       \ 'p' : [':FloatermNew python'                            , 'python'],
       \ 'b' : [':FloatermNew btm'                           	, 'btm'],
       \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
