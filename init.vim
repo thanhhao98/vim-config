@@ -1,7 +1,7 @@
-set rtp+=/home/haophan/.config/nvim/Vundle.vim
-call vundle#begin('/home/haophan/.config/nvim/data')
-    Plugin 'preservim/nerdcommenter'
+set rtp+=~/.config/nvim/Vundle.vim
+call vundle#begin('~/.config/nvim/data')
     Plugin 'VundleVim/Vundle.vim'
+    Plugin 'preservim/nerdcommenter'
     Plugin 'morhetz/gruvbox'
     Plugin 'tpope/vim-surround'
     Plugin 'jiangmiao/auto-pairs'
@@ -23,6 +23,8 @@ call vundle#begin('/home/haophan/.config/nvim/data')
     Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 call vundle#end()
+
+syntax on
 
 """ theme
 let g:gruvbox_contrast_dark='hard'
@@ -51,7 +53,7 @@ autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 """ Map init key
 let python_highlight_all = 1
 let g:fzf_command_prefix = 'Fzf'
-let g:python3_host_prog = "/home/haophan/.config/miniconda3/bin/python3"
+let g:python3_host_prog = "~/.config/miniconda3/bin/python3"
 let g:python_host_prog = "/usr/bin/python2" 
 let g:loaded_ruby_provider = 0
 let g:loaded_perl_provider = 0
@@ -75,7 +77,7 @@ nnoremap <C-L> <C-W><C-L>
 
 """ Auto command
 command! ToggleHF CocCommand clangd.switchSourceHeader
-command! -bang -nargs=? -complete=dir F call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+command! -bang -nargs=? -complete=dir F call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse']}), <bang>0)
 
 """ set mapleader
 let g:mapleader = "\<Space>"
@@ -84,25 +86,25 @@ let g:mapleader = "\<Space>"
 set showcmd
 
 """ Which key
-source /home/haophan/.config/nvim/plug-config/which-key.vim
+source ~/.config/nvim/plug-config/which-key.vim
 
 " COC
-source /home/haophan/.config/nvim/plug-config/coc.vim
+source ~/.config/nvim/plug-config/coc.vim
 
 """ coc explorer floating
-source /home/haophan/.config/nvim/plug-config/coc-explorer.vim
+source ~/.config/nvim/plug-config/coc-explorer.vim
 
 """ coc explorer startify
-source /home/haophan/.config/nvim/plug-config/startify.vim
+source ~/.config/nvim/plug-config/startify.vim
 
 """ airline
-source /home/haophan/.config/nvim/plug-config/airline.vim
+source ~/.config/nvim/plug-config/airline.vim
 
 """ Signify git intergration
-source /home/haophan/.config/nvim/plug-config/signify-git.vim
+source ~/.config/nvim/plug-config/signify-git.vim
 
 """ Cmake git
-source /home/haophan/.config/nvim/plug-config/cmake.vim
+source ~/.config/nvim/plug-config/cmake.vim
 
 """ Floaterm
-source /home/haophan/.config/nvim/plug-config/floaterm.vim
+source ~/.config/nvim/plug-config/floaterm.vim

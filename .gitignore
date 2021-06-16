@@ -2,3 +2,5 @@ data/
 vimscript/
 session/
 Vundle.vim/
+
+.vim/coc-settings.json
