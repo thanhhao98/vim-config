@@ -22,6 +22,7 @@ call vundle#begin('~/.config/nvim/data')
     Plugin 'liuchengxu/vim-which-key'
     Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+    Plugin 'rust-lang/rust.vim'
 call vundle#end()
 
 syntax on
