@@ -21,7 +21,7 @@ call vundle#begin('~/.config/nvim/data')
     Plugin 'voldikss/vim-floaterm'
     Plugin 'liuchengxu/vim-which-key'
     Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+    Plugin 'neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-lockfile'}
     Plugin 'rust-lang/rust.vim'
 call vundle#end()
 
