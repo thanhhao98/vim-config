@@ -2,7 +2,7 @@ let g:floaterm_keymap_toggle = '<F1>'
 let g:floaterm_keymap_next   = '<F2>'
 let g:floaterm_keymap_prev   = '<F3>'
 let g:floaterm_keymap_new    = '<F4>'
-let g:floaterm_keymap_kill   = '<F12>'
+let g:floaterm_keymap_kill   = '<F7>'
 
 " Floaterm
 let g:floaterm_gitcommit='floaterm'
@@ -17,11 +17,11 @@ let g:which_key_map.t = {
       \ 'n' : [':FloatermNew'                             	, 'new'],
       \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
       \ 'g' : [':FloatermNew lazygit'                           , 'git'],
-      \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
-      \ 'N' : [':FloatermNew node'                              , 'node'],
-      \ 'p' : [':FloatermNew python'                            , 'python'],
-      \ 'b' : [':FloatermNew btm'                           	, 'btm'],
-      \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
-      \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
+      "\ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
+      "\ 'N' : [':FloatermNew node'                              , 'node'],
+      "\ 'p' : [':FloatermNew python'                            , 'python'],
+      "\ 'b' : [':FloatermNew btm'                           	, 'btm'],
+      "\ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
+      "\ 'r' : [':FloatermNew ranger'                            , 'ranger'],
       \ 't' : [':FloatermToggle'                                , 'toggle'],
       \ }

@@ -1,10 +1,10 @@
 {
     "python.pythonPath": "~/.config/miniconda3/bin/python3",
-    "clangd.path": "/home/thanhhao/.config/coc/extensions/node_modules/coc-clangd",
     "explorer.keyMappings.global": {
 	"<cr>": ["expandable?", "expand", "open"],
 	"v": "open:vsplit"
     },
+    "clangd.path": "/Users/phanhao/.config/coc/extensions/node_modules/coc-clangd",
     "languageserver": {
 	"cmake": {
 	    "command": "cmake-language-server",
