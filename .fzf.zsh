@@ -1,1 +1,0 @@
-/home/thanhhao/.fzf.zsh
